@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  opacity: 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d192b;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.nft {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.nft .nft-container-contents {
+  width: 100%;
+}
+
+.nft .nft-container-contents .nft-card {
+  padding: 20px;
+  width: 360px;
+  background-color: #14253d;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 12px 0px 12px rgba(0, 0, 0, 0.1), 0px 12px 0px 36px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 12px 0px 12px rgba(0, 0, 0, 0.1), 0px 12px 0px 36px rgba(0, 0, 0, 0.05);
+}
+
+.nft .nft-container-contents .nft-card .nft-image {
+  height: 320px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nft .nft-container-contents .nft-card .nft-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.nft .nft-container-contents .nft-card .nft-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../images/icon-view.svg) no-repeat center center;
+  background-color: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  opacity: 0;
+  color: white;
+  mix-blend-mode: lighten;
+  border-radius: 8px;
+}
+
+.nft .nft-container-contents .nft-card .nft-image:hover .overlay {
+  opacity: 1;
+}
+
+.nft .nft-container-contents .nft-card .nft-body {
+  margin: 2rem 0;
+}
+
+.nft .nft-container-contents .nft-card .nft-body h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+.nft .nft-container-contents .nft-card .nft-body h1:hover {
+  color: #00fff7;
+}
+
+.nft .nft-container-contents .nft-card .nft-body p {
+  color: #8bacda;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-content .info .eth {
+  color: #00fff7;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-content .info span {
+  margin-left: .5rem;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .hr {
+  opacity: .1;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom .nft-bottom-img-container {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid white;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom .nft-bottom-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom p {
+  margin-left: 20px;
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom p span {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+.nft .nft-container-contents .nft-card .nft-body .nft-bottom p span:hover {
+  color: #00fff7;
+}
+
+@media screen and (max-width: 580px) {
+  .nft .nft-container-contents .nft-card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
