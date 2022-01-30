@@ -13,8 +13,14 @@ body {
     background-color: hsl(217, 54%, 11%);
 }
 
-.attribution { font-size: 11px; text-align: center; opacity: 0; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
 
 .section {
     width: 100%;
@@ -153,5 +159,6 @@ body {
                   width: 100%;
             }
         }
+        
     }
 }
